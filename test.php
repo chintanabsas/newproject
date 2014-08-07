@@ -16,6 +16,7 @@ window.parent.document.getElementById('#target');
 function test()
 {
             alert(inputIframe.value);
+			alert('inputIframe.value');
 
 
 }
