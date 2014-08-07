@@ -24,6 +24,15 @@ window.parent.document.getElementById('#target');
 
 
 }
+
+function abc()
+{
+	alert('testing git hub......');
+
+}
+
+
+
 </script>
 
 <iframe name='select_frame' id ="select_frame" src='select.php?initial_name=jim'></iframe>
