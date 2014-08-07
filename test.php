@@ -17,6 +17,8 @@ function test()
 {
             alert(inputIframe.value);
 			alert('inputIframe.value');
+			alert(inputIframe.value);
+			alert('inputIframe.value');
 
 
 }
