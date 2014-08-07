@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="dist/ladda.min.css">
+<style>
+#jquery-script-menu {
+position: fixed;
+height: 90px;
+width: 100%;
+top: 0;
+left: 0;
+border-top: 5px solid #316594;
+background: #fff;
+-moz-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+-webkit-box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.16);
+z-index: 999999;
+padding: 10px 0;
+}
+
+.jquery-script-center {
+width: 960px;
+margin: 0 auto;
+}
+.jquery-script-center ul {
+width: 212px;
+float:left;
+line-height:45px;
+margin:0;
+padding:0;
+list-style:none;
+}
+.jquery-script-center a {
+	text-decoration:none;
+}
+.jquery-script-ads {
+width: 728px;
+height:90px;
+float:right;
+}
+.jquery-script-clear {
+clear:both;
+height:0;
+}
+
+</style>
+</head>
+
+<body>
+<div class="wrap">
+<div class="main">
+<div class="top-head">
+<div class="chat-but"></div>
+<div class="top-head-text">Conversation Massage</div>
+</div>
+
+<div class="post-msg-box-main">
+<div class="post-msg-box">
+<div class="top-head-text" style="color:#333;">Ajay Kumar</div>
+<div class="msg-text" style="font-weight:bold;">10-JUL-2014 , 12:00 am</div>
+<div class="msg-text">Returns the rounded value of val to specified precision (number of digits after the decimal point). precision can also be negative or zero (default).
+
+Returns the rounded value of val to specifi</div>
+<div class="icon"><img src="img/attachment.png" width="23" height="17" /></div>
+<div class="attachment-icon"><p style="padding-left:8px; font-family:Arial, Helvetica, sans-serif; font-size:12px;">dummy text is cuming</p></div>
+</div>
+<div class="cret"></div>
+<div class="img"><img src="img/user.png" width="50" height="50"/></div>
+</div>
+<div class="post-msg-box-main">
+<div class="post-msg-box2">
+
+<div class="top-head-text" style="color:#333;">Ajay Kumar</div>
+<div class="msg-text" style="font-weight:bold;">10-JUL-2014 , 12:00 am</div>
+<div class="msg-text">Returns the rounded value of val to specified precision (number of digits after the decimal point). precision can also be negative or zero (default).
+
+Returns the rounded value of val to specifi</div>
+<div class="icon"><img src="img/attachment.png" width="23" height="17" /></div>
+<div class="attachment-icon"><p style="padding-left:8px; font-family:Arial, Helvetica, sans-serif; font-size:12px;">dummy text is cuming</p></div>
+</div>
+<div class="cret2">
+</div>
+<div class="user-img2"><img src="img/user.png" width="50" height="50"/></div>
+</div>
+
+<div class="user-msg-box">
+<textarea class="txtarea" rows="8" cols="72" id="msg" name="msg" style="margin-left:13px"></textarea>
+<div class="user-msg-box"><input type="file" id="file" name="file" class="upload">
+
+<div class="button-demo"><button name="messagebutton" id="messagebutton" class="ladda-button" data-color="green" data-style="expand-right" data-size="xs" onclick="submitMessage();" style="float:right !important; margin-right:13px !important;">Submit</button></div>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<script src="dist/spin.min.js"></script> 
+<script src="dist/ladda.min.js"></script> 
+<script>
+
+			// Bind normal buttons
+			Ladda.bind( '.button-demo button', { timeout: 2000 } );
+
+			// Bind progress buttons and simulate loading progress
+			Ladda.bind( '.progress-demo button', {
+				callback: function( instance ) {
+					var progress = 0;
+					var interval = setInterval( function() {
+						progress = Math.min( progress + Math.random() * 0.1, 1 );
+						instance.setProgress( progress );
+
+						if( progress === 1 ) {
+							instance.stop();
+							clearInterval( interval );
+						}
+					}, 200 );
+				}
+			} );
+
+			// You can control loading explicitly using the JavaScript API
+			// as outlined below:
+
+			// var l = Ladda.create( document.querySelector( 'button' ) );
+			// l.start();
+			// l.stop();
+			// l.toggle();
+			// l.isLoading();
+			// l.setProgress( 0-1 );
+
+		</script>
+        <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+
+</html>
