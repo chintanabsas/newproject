@@ -2,7 +2,7 @@
  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 </script>
 <script>
-$(document).ready(function() {
+$(document).ready(function() {alert("123");
 
 window.parent.document.getElementById('#target'); 
  var select_frame = document.getElementById("select_frame");
